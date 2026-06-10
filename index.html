@@ -114,13 +114,13 @@ a{color:inherit;text-decoration:none}
 @media(max-width:480px){.process-item{grid-template-columns:1fr}}
 
 /* BELIEFS */
-.beliefs-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--divider);border-radius:var(--radius-xl);overflow:hidden;margin-top:2.5rem}
+.beliefs-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--divider);border-radius:var(--radius-xl);overflow:hidden;margin-top:2.5rem}.belief-item{grid-column:span 2}.belief-item:nth-child(4){grid-column:2/span 2}.belief-item:nth-child(5){grid-column:4/span 2}
 .belief-item{background:var(--surface);padding:2rem}
 .belief-quote{font-family:var(--serif);font-size:1.2rem;font-style:normal;font-weight:700;line-height:1.5;margin-bottom:.6rem;color:var(--navy)}
 .belief-quote::before{content:'“';color:var(--red)}
 .belief-quote::after{content:'”';color:var(--red)}
 .belief-src{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);font-weight:600}
-@media(max-width:600px){.beliefs-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.beliefs-grid{grid-template-columns:1fr}.belief-item,.belief-item:nth-child(4),.belief-item:nth-child(5){grid-column:1/-1}}
 
 /* TEAM */
 .team-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.25rem;margin-top:2.5rem}
@@ -394,7 +394,6 @@ select.form-input{appearance:none;background-image:url("data:image/svg+xml,%3Csv
       <div class="belief-item"><p class="belief-quote">When timing or budget looks impossible, we find a way through — not around.</p><span class="belief-src">On problem-solving</span></div>
       <div class="belief-item"><p class="belief-quote">Environmentally responsible print is not more expensive. It is a decision.</p><span class="belief-src">On sustainability</span></div>
       <div class="belief-item"><p class="belief-quote">The donor relationship belongs to the charity. We build it; we don't own it.</p><span class="belief-src">On donor trust</span></div>
-      <div class="belief-item"><p class="belief-quote">[ Add a sixth belief — a plainspoken principle from John. ]</p><span class="belief-src">On [ topic ]</span></div>
     </div>
   </div>
 </section>
